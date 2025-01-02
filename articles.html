@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>كل المقالات</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons -->
+    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/tiny-slider.css" rel="stylesheet" />
+    <link href="css/line.css" rel="stylesheet" />
+    <link href="css/tabler-icons.min.css" rel="stylesheet" />
+    <!-- Main Css -->
+    <link href="css/style.min.css" rel="stylesheet" type="text/css" id="theme-opt" />
+</head>
+
+<style>
+    #results {
+        position: absolute;
+        top: 45px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        border-radius: 5px;
+        z-index: 1000;
+        max-height: 200px;
+        overflow-y: auto;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #results li {
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    #results li:hover {
+        background: #f1f1f1;
+    }
+</style>
+
+<body class="bg-light">
+
+    <!-- Navbar Start -->
+    <header id="topnav" class="defaultscroll sticky bg-white">
+        <div class="container">
+
+            <!-- Logo container-->
+            <a class="logo" href="index.html">
+                <img src="images/public/Logo.png" height="50" class="big-logo" alt="">
+            </a>
+            <!-- End Logo container-->
+
+            <!-- Mobile menu toggle-->
+            <div class="menu-extras">
+                <div class="menu-item">
+                    <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- End mobile menu toggle-->
+
+            <!-- Search-->
+            <ul class="buy-button list-inline mb-0">
+                <li class="list-inline-item mb-0">
+                    <div class="search-bar">
+                        <div id="search" class="menu-search mb-0">
+                            <form role="search" method="get" id="searchform" class="searchform">
+                                <div>
+                                    <!-- حقل البحث -->
+                                    <input type="text" class="border rounded" id="searchInput" placeholder="Search...">
+                                    <input type="submit" id="searchsubmit" value="Search">
+                                </div>
+                                <!-- النتائج -->
+                                <ul id="results" class="list-group mt-2"></ul>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+                <!-- End Search-->
+
+                <!-- Profile-->
+                <li class="list-inline-item ms-2">
+                    <a href="">
+                        <img src="images/public/Profile.png" class="rounded-pill avatar avatar-sm-sm" alt="">
+                    </a>
+                </li>
+            </ul>
+            <!-- End Profile-->
+
+            <!-- Navigation Menu-->
+            <div id="navigation">
+                <ul class="navigation-menu nav-left">
+                    <li>
+                        <a href="index.html" class="sub-menu-item">Home</a>
+                    </li>
+                    <li>
+                        <a href="articles.html" class="sub-menu-item">Articles</a>
+                    </li>
+                    <li>
+                        <a href="pages/about-us.html" class="sub-menu-item">About Us</a>
+                    </li>
+                    <li>
+                        <a href="pages/contact.html" class="sub-menu-item">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+            <!--end navigation menu-->
+
+        </div>
+    </header>
+    <!-- Navbar End -->
+
+    <br>
+    <br>
+
+    <!-- Articles Section -->
+    <section class="container mt-5">
+        <h1 class="text-center mb-4">All Articles</h1>
+        <div class="row">
+
+            <!-- Article -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm"
+                    style="height: 100%; display: flex; flex-direction: column; position: relative;">
+                    <img src="images/health/health-1.jpg" class="card-img-top"
+                        alt="Breakthroughs in Health Technology 2024">
+                    <div class="card-body" style="flex-grow: 1; padding-bottom: 40px;">
+                        <h5 class="card-title">Breakthroughs in Health Technology 2024</h5>
+                        <p class="card-text">Explore the latest advancements in health technology and artificial
+                            intelligence transforming the healthcare landscape in 2024.</p>
+                        <a href="pages/Health-blog/blog-health-1.html" class="btn btn-primary"
+                            style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">Read More
+                            <lord-icon src="https://cdn.lordicon.com/whtfgdfm.json" trigger="hover"
+                                colors="primary:#fff" style="width:20px;height:20px; vertical-align:middle;">
+                            </lord-icon></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Article -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm"
+                    style="height: 100%; display: flex; flex-direction: column; position: relative;">
+                    <img src="images/health/health-2.jpeg" class="card-img-top"
+                        alt="Simple Habits for a Healthier Lifestyle">
+                    <div class="card-body" style="flex-grow: 1; padding-bottom: 40px;">
+                        <h5 class="card-title">Simple Habits for a Healthier Lifestyle</h5>
+                        <p class="card-text">Discover the small yet impactful habits that can significantly improve your
+                            overall health and well-being.</p>
+                        <a href="pages/Health-blog/blog-health-2.html" class="btn btn-primary"
+                            style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">Read More
+                            <lord-icon src="https://cdn.lordicon.com/whtfgdfm.json" trigger="hover"
+                                colors="primary:#fff" style="width:20px;height:20px; vertical-align:middle;">
+                            </lord-icon></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Article -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm"
+                    style="height: 100%; display: flex; flex-direction: column; position: relative;">
+                    <img src="images/health/health-3.png" class="card-img-top" alt="Top Exercises to Stay Fit at Home">
+                    <div class="card-body" style="flex-grow: 1; padding-bottom: 40px;">
+                        <h5 class="card-title">Top Exercises to Stay Fit at Home</h5>
+                        <p class="card-text">Learn the best exercises to stay healthy and fit from the comfort of your
+                            own home, without the need for a gym.</p>
+                        <a href="pages/Health-blog/blog-health-3.html" class="btn btn-primary"
+                            style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">Read More
+                            <lord-icon src="https://cdn.lordicon.com/whtfgdfm.json" trigger="hover"
+                                colors="primary:#fff" style="width:20px;height:20px; vertical-align:middle;">
+                            </lord-icon></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Article -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm"
+                    style="height: 100%; display: flex; flex-direction: column; position: relative;">
+                    <img src="images/health/health-4.jpg" class="card-img-top"
+                        alt="Latest Updates on Global Health Trends">
+                    <div class="card-body" style="flex-grow: 1; padding-bottom: 40px;">
+                        <h5 class="card-title">Latest Updates on Global Health Trends</h5>
+                        <p class="card-text">Stay informed with the most recent developments and trends shaping the
+                            future of global health.</p>
+                        <a href="pages/Health-blog/blog-health-4.html" class="btn btn-primary"
+                            style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">Read More
+                            <lord-icon src="https://cdn.lordicon.com/whtfgdfm.json" trigger="hover"
+                                colors="primary:#fff" style="width:20px;height:20px; vertical-align:middle;">
+                            </lord-icon></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Article -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm"
+                    style="height: 100%; display: flex; flex-direction: column; position: relative;">
+                    <img src="images/news/news-1.png" class="card-img-top" alt="Global Economic Trends in 2024">
+                    <div class="card-body" style="flex-grow: 1; padding-bottom: 40px;">
+                        <h5 class="card-title">Global Economic Trends in 2024</h5>
+                        <p class="card-text">Explore the economic shifts that are expected to shape the global landscape
+                            in 2024 and beyond.</p>
+                        <a href="pages/News-blog/blog-news-1.html" class="btn btn-primary"
+                            style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">Read More
+                            <lord-icon src="https://cdn.lordicon.com/whtfgdfm.json" trigger="hover"
+                                colors="primary:#fff" style="width:20px;height:20px; vertical-align:middle;">
+                            </lord-icon></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Article -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm"
+                    style="height: 100%; display: flex; flex-direction: column; position: relative;">
+                    <img src="images/news/news-2.jpg" class="card-img-top" alt="Political Shifts Across Continents">
+                    <div class="card-body" style="flex-grow: 1; padding-bottom: 40px;">
+                        <h5 class="card-title">Political Shifts Across Continents</h5>
+                        <p class="card-text">Understand the major political transitions happening around the world and
+                            their global implications.</p>
+                        <a href="pages/News-blog/blog-news-2.html" class="btn btn-primary"
+                            style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">Read More
+                            <lord-icon src="https://cdn.lordicon.com/whtfgdfm.json" trigger="hover"
+                                colors="primary:#fff" style="width:20px;height:20px; vertical-align:middle;">
+                            </lord-icon></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Article -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm"
+                    style="height: 100%; display: flex; flex-direction: column; position: relative;">
+                    <img src="images/news/news-3.webp" class="card-img-top" alt="Advances in Renewable Energy">
+                    <div class="card-body" style="flex-grow: 1; padding-bottom: 40px;">
+                        <h5 class="card-title">Breaking News: Advances in Renewable Energy</h5>
+                        <p class="card-text">Catch up with the latest breakthroughs in renewable energy and their impact
+                            on the global energy sector.</p>
+                        <a href="pages/News-blog/blog-news-3.html" class="btn btn-primary"
+                            style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">Read More
+                            <lord-icon src="https://cdn.lordicon.com/whtfgdfm.json" trigger="hover"
+                                colors="primary:#fff" style="width:20px;height:20px; vertical-align:middle;">
+                            </lord-icon></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Article -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm"
+                    style="height: 100%; display: flex; flex-direction: column; position: relative;">
+                    <img src="images/tech/tech-1.png" class="card-img-top"
+                        alt="The Future of AI: Trends and Innovations">
+                    <div class="card-body" style="flex-grow: 1; padding-bottom: 40px;">
+                        <h5 class="card-title">The Future of AI: Trends and Innovations</h5>
+                        <p class="card-text">Discover how artificial intelligence is revolutionizing industries and what
+                            the future holds for this transformative technology.</p>
+                        <a href="pages/Tech-blog/blog-tech-1.html" class="btn btn-primary"
+                            style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">Read More
+                            <lord-icon src="https://cdn.lordicon.com/whtfgdfm.json" trigger="hover"
+                                colors="primary:#fff" style="width:20px;height:20px; vertical-align:middle;">
+                            </lord-icon></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Article -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm"
+                    style="height: 100%; display: flex; flex-direction: column; position: relative;">
+                    <img src="images/tech/tech-2.png" class="card-img-top"
+                        alt="Top Cybersecurity Practices for Modern Businesses">
+                    <div class="card-body" style="flex-grow: 1; padding-bottom: 40px;">
+                        <h5 class="card-title">Top Cybersecurity Practices for Modern Businesses</h5>
+                        <p class="card-text">Learn the best practices to ensure the cybersecurity of businesses in the
+                            face of increasing digital threats.</p>
+                        <a href="pages/Tech-blog/blog-tech-2.html" class="btn btn-primary"
+                            style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">Read More
+                            <lord-icon src="https://cdn.lordicon.com/whtfgdfm.json" trigger="hover"
+                                colors="primary:#fff" style="width:20px;height:20px; vertical-align:middle;">
+                            </lord-icon></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Article -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm"
+                    style="height: 100%; display: flex; flex-direction: column; position: relative;">
+                    <img src="images/tech/tech-3.jpg" class="card-img-top"
+                        alt="How 5G Networks are Changing Connectivity">
+                    <div class="card-body" style="flex-grow: 1; padding-bottom: 40px;">
+                        <h5 class="card-title">How 5G Networks are Changing Connectivity</h5>
+                        <p class="card-text">Explore the transformative effects of 5G technology on connectivity and its
+                            potential for various industries.</p>
+                        <a href="pages/Tech-blog/blog-tech-3.html" class="btn btn-primary"
+                            style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">Read More
+                            <lord-icon src="https://cdn.lordicon.com/whtfgdfm.json" trigger="hover"
+                                colors="primary:#fff" style="width:20px;height:20px; vertical-align:middle;">
+                            </lord-icon></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Article -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm"
+                    style="height: 100%; display: flex; flex-direction: column; position: relative;">
+                    <img src="images/health/health-2.jpeg" class="card-img-top"
+                        alt="Simple Habits for a Healthier Lifestyle">
+                    <div class="card-body" style="flex-grow: 1; padding-bottom: 40px;">
+                        <h5 class="card-title">Simple Habits for a Healthier Lifestyle</h5>
+                        <p class="card-text">Discover the small yet impactful habits that can significantly improve your
+                            overall health and well-being.</p>
+                        <a href="pages/Health-blog/blog-health-2.html" class="btn btn-primary"
+                            style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">Read More
+                            <lord-icon src="https://cdn.lordicon.com/whtfgdfm.json" trigger="hover"
+                                colors="primary:#fff" style="width:20px;height:20px; vertical-align:middle;">
+                            </lord-icon></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Article -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm"
+                    style="height: 100%; display: flex; flex-direction: column; position: relative;">
+                    <img src="images/health/health-1.jpg" class="card-img-top"
+                        alt="Breakthroughs in Health Technology 2024">
+                    <div class="card-body" style="flex-grow: 1; padding-bottom: 40px;">
+                        <h5 class="card-title">Breakthroughs in Health Technology 2024</h5>
+                        <p class="card-text">Explore the latest advancements in health technology and artificial
+                            intelligence transforming the healthcare landscape in 2024.</p>
+                        <a href="pages/Health-blog/blog-health-1.html" class="btn btn-primary"
+                            style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">Read More
+                            <lord-icon src="https://cdn.lordicon.com/whtfgdfm.json" trigger="hover"
+                                colors="primary:#fff" style="width:20px;height:20px; vertical-align:middle;">
+                            </lord-icon></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-py-60">
+                        <div class="row">
+                            <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                                <a href="#" class="logo-footer">
+                                    <img src="images/public/Logo.png" height="100" alt="">
+                                </a>
+                                <p class="mt-4">Welcome to our online magazine—a dynamic space where curiosity meets
+                                    creativity. Discover a world of insightful articles, trending topics, and
+                                    captivating stories designed to inform, inspire, and entertain. Whether you're
+                                    seeking knowledge, lifestyle tips, or the latest updates, we've got something for
+                                    everyone!</p>
+                                <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
+                                    <li class="list-inline-item">
+                                        <a href="#" class="rounded">
+                                            <i class="mdi mdi-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="rounded">
+                                            <i class="mdi mdi-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="rounded">
+                                            <i class="mdi mdi-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="rounded">
+                                            <i class="mdi mdi-github"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="rounded">
+                                            <i class="mdi mdi-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="rounded">
+                                            <i class="mdi mdi-whatsapp"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!--end icon-->
+                            </div>
+
+
+                            <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                <h5 class="footer-head">Usefull Links</h5>
+                                <ul class="list-unstyled footer-list mt-4">
+                                    <li>
+                                        <a href="index.html" class="text-foot">
+                                            <i class="ti ti-chevron-right me-1"></i> Home </a>
+                                    </li>
+                                    <li>
+                                        <a href="pages/about-us.html" class="text-foot">
+                                            <i class="ti ti-chevron-right me-1"></i> About us </a>
+                                    </li>
+                                    <li>
+                                        <a href="pages/contact.html" class="text-foot">
+                                            <i class="ti ti-chevron-right me-1"></i> Contact us </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                <h5 class="footer-head">Question?</h5>
+                                <ul class="list-unstyled footer-list mt-4">
+                                    <li class="d-flex">
+                                        <span class="ti ti-mail fs-5"></span>
+                                        <div class="flex-1 ms-2">
+                                            <span class="d-block text-light">Drop us a line at:</span>
+                                            <a href="mailto:contact@example.com"
+                                                class="text-foot d-block mt-2">contact@example.com</a>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <span class="ti ti-phone fs-5"></span>
+                                        <div class="flex-1 ms-2">
+                                            <span class="d-block text-light">Call now:</span>
+                                            <a href="tel:+152534-468-854" class="text-foot d-block mt-2">+963 123 456
+                                                789</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-py-30 footer-border">
+                        <div class="row align-items-center">
+                            <div class="col-sm-6">
+                                <div class="text-sm-start">
+                                    <p class="mb-0">©
+                                        <script>
+                                            document.write(new Date().getFullYear())
+                                        </script> Design with <i class="mdi mdi-heart text-danger"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                <ul class="list-unstyled footer-list terms-service text-sm-end mb-0">
+                                    <li class="list-inline-item mb-0">
+                                        <a href="javascript:void(0)" class="text-foot me-2">Privacy</a>
+                                    </li>
+                                    <li class="list-inline-item mb-0">
+                                        <a href="javascript:void(0)" class="text-foot me-2">Terms</a>
+                                    </li>
+                                    <li class="list-inline-item mb-0">
+                                        <a href="javascript:void(0)" class="text-foot me-2">FAQs</a>
+                                    </li>
+                                    <li class="list-inline-item mb-0">
+                                        <a href="pages/contact.html" class="text-foot">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--end footer-->
+    <!-- Footer End -->
+
+
+    <!-- Back to top -->
+    <a href="javascript:void(0)" onclick="topFunction()" id="back-to-top" class="back-to-top rounded-pill">
+        <i class="mdi mdi-arrow-up"></i>
+    </a>
+    <!-- Back to top -->
+
+
+    <!-- javascript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/plugins.init.js"></script>
+    <!--Note: All init js like tiny slider, counter, lightbox, gallery etc.-->
+    <script src="js/app.js"></script>
+    <!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.querySelector('.subcribe-form form');
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+                const emailInput = document.getElementById('email');
+                const email = emailInput.value.trim();
+                if (email === '' || !email.includes('@')) {
+                    alert('Please enter a valid email address.');
+                    return;
+                }
+                alert('You have successfully subscribed to our newsletter!');
+                emailInput.value = '';
+            });
+        });</script>
+    <script>
+        // Sample data for search
+        const items = [
+            { title: "Discover Insights: The Future of Online Magazines", url: "pages/News-blog/blog-news-4.html" },
+            { title: "Breakthroughs in Health Technology 2024", url: "pages/Health%-blog/blog-health-1.html" },
+            { title: "Simple Habits for a Healthier Lifestyle", url: "pages/Health-blog/blog-health-2.html" },
+            { title: "Top Exercises to Stay Fit at Home", url: "pages/Health-blog/blog-health-3.html" },
+            { title: "Latest Updates on Global Health Trends", url: "pages/Health-blog/blog-health-4.html" },
+            { title: "The Future of AI: Trends and Innovations", url: "pages/Tech-blog/blog-tech-1.html" },
+            { title: "Top Cybersecurity Practices for Modern Businesses", url: "pages/Tech-blog/blog-tech-2.html" },
+            { title: "How 5G Networks are Changing Connectivity", url: "pages/Tech-blog/blog-tech-3.html" },
+            { title: "Global Economic Trends in 2024", url: "pages/News-blog/blog-news-1.html" },
+            { title: "Political Shifts Across Continents", url: "pages/News-blog/blog-news-2.html" },
+            { title: "Breaking News: Advances in Renewable Energy", url: "pages/News-blog/blog-news-3.html" }
+        ];
+
+        const searchInput = document.getElementById('searchInput');
+        const results = document.getElementById('results');
+
+        function filterResults(query) {
+            results.innerHTML = '';
+            if (query) {
+                const filteredItems = items.filter(item =>
+                    item.title.toLowerCase().includes(query.toLowerCase())
+                );
+
+                filteredItems.forEach(item => {
+                    const li = document.createElement('li');
+                    const a = document.createElement('a');
+                    a.textContent = item.title;
+                    a.href = item.url;
+                    a.classList.add('search-result-item');
+                    li.appendChild(a);
+                    results.appendChild(li);
+                });
+            }
+        }
+
+        searchInput.addEventListener('input', () => filterResults(searchInput.value));
+
+        document.addEventListener('click', (e) => {
+            if (!searchInput.contains(e.target) && !results.contains(e.target)) {
+                results.innerHTML = '';
+            }
+        });
+    </script>
+</body>
+
+</html>
