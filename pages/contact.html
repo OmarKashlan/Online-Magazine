@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="utf-8" />
+    <title>اتصل بنا</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link href="../images/favicon.ico" rel="shortcut icon">
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons -->
+    <link href="../css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/tiny-slider.css" rel="stylesheet" />
+    <link href="../css/line.css" rel="stylesheet" />
+    <link href="../css/tabler-icons.min.css" rel="stylesheet" />
+    <!-- Main Css -->
+    <link href="../css/style.min.css" rel="stylesheet" type="text/css" id="theme-opt" />
+</head>
+
+<style>
+    #results {
+        position: absolute;
+        top: 45px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        border-radius: 5px;
+        z-index: 1000;
+        max-height: 200px;
+        overflow-y: auto;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #results li {
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    #results li:hover {
+        background: #f1f1f1;
+    }
+</style>
+
+<body class="bg-light">
+
+    <!-- Navbar Start -->
+    <header id="topnav" class="defaultscroll sticky bg-white">
+        <div class="container">
+
+            <!-- Logo container-->
+            <a class="logo" href="../index.html">
+                <img src="../images/public/Logo.png" height="50" class="big-logo" alt="">
+            </a>
+            <!-- End Logo container-->
+
+            <!-- Mobile menu toggle-->
+            <div class="menu-extras">
+                <div class="menu-item">
+                    <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- End mobile menu toggle-->
+
+            <!-- Search-->
+            <ul class="buy-button list-inline mb-0">
+                <li class="list-inline-item mb-0">
+                    <div class="search-bar">
+                        <div id="search" class="menu-search mb-0">
+                            <form role="search" method="get" id="searchform" class="searchform">
+                                <div>
+                                    <!-- حقل البحث -->
+                                    <input type="text" class="border rounded" id="searchInput" placeholder="Search...">
+                                    <input type="submit" id="searchsubmit" value="Search">
+                                </div>
+                                <!-- النتائج -->
+                                <ul id="results" class="list-group mt-2"></ul>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+                <!-- End Search-->
+
+                <!-- Profile-->
+                <li class="list-inline-item ms-2">
+                    <a href="">
+                        <img src="../images/public/Profile.png" class="rounded-pill avatar avatar-sm-sm" alt="">
+                    </a>
+                </li>
+            </ul>
+            <!-- End Profile-->
+
+            <!-- Navigation Menu-->
+            <div id="navigation">
+                <ul class="navigation-menu nav-left">
+                    <li>
+                        <a href="../index.html" class="sub-menu-item">Home</a>
+                    </li>
+                    <li>
+                        <a href="/pages/about-us.html" class="sub-menu-item">About Us</a>
+                    </li>
+                    <li>
+                        <a href="/pages/contact.html" class="sub-menu-item">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+            <!--end navigation menu-->
+
+        </div>
+    </header>
+    <!-- Navbar End -->
+
+    <!-- Start -->
+    <section class="bg-half-100 d-table w-100 bg-light">
+        <div class="container">
+            <div class="row mt-5 justify-content-center">
+                <div class="col-lg-8 col-md-6">
+                    <div class="title-heading text-center">
+                        <h2 class="mb-0 heading page-heading">Contact Us <lord-icon
+                                src="https://cdn.lordicon.com/srsgifqc.json" trigger="loop" delay="1000"
+                                state="morph-phone-ring" colors="primary:#3c4858"
+                                style="width:30px;height:30px;vertical-align: middle;">
+                            </lord-icon></h2>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
+    </section><!--end section-->
+    <!-- End -->
+
+    <!-- Start -->
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card border-0 text-center features feature-primary rounded p-4">
+                        <div class="icon text-center mx-auto rounded-md">
+                            <i class="uil uil-phone d-block rounded h3 mb-0"></i>
+                        </div>
+                        <div class="content mt-3">
+                            <h5 class="footer-head">Phone</h5>
+                            <p class="text-muted">Reach us for inquiries or collaborations anytime.</p>
+                            <a href="tel:+152534-468-854" class="link">+963 123 456 789</a>
+                        </div>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-md-4 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <div class="card border-0 text-center features feature-primary rounded p-4">
+                        <div class="icon text-center mx-auto rounded-md">
+                            <i class="uil uil-envelope d-block rounded h3 mb-0"></i>
+                        </div>
+                        <div class="content mt-3">
+                            <h5 class="footer-head">Email</h5>
+                            <p class="text-muted">Send us your thoughts, suggestions, or questions.</p>
+                            <a href="mailto:contact@example.com" class="link">contact@example.com</a>
+                        </div>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-md-4 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <div class="card border-0 text-center features feature-primary rounded p-4">
+                        <div class="icon text-center mx-auto rounded-md">
+                            <i class="uil uil-map-marker d-block rounded h3 mb-0"></i>
+                        </div>
+                        <div class="content mt-3">
+                            <h5 class="footer-head">Location</h5>
+                            <p class="text-muted">Damascus<br>Syria</p>
+                        </div>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
+
+        <div class="container mt-100 mt-60">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title mb-5 pb-2 text-center">
+                        <h4 class="title mb-3">Get In Touch !</h4>
+                        <p class="text-muted para-desc mx-auto mb-0">We'd love to hear from you. Share your ideas,
+                            feedback, or partnership proposals.</p>
+                    </div>
+                    <div class="custom-form">
+                        <form method="post" name="myForm" onsubmit="return validateForm()">
+                            <p id="error-msg" class="mb-0"></p>
+                            <div id="simple-msg"></div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Your Name <span class="text-danger">*</span></label>
+                                        <input name="name" id="name" type="text" class="form-control"
+                                            placeholder="Name :">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Your Email <span class="text-danger">*</span></label>
+                                        <input name="email" id="email" type="email" class="form-control"
+                                            placeholder="Email :">
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Subject</label>
+                                        <input name="subject" id="subject" class="form-control" placeholder="Subject :">
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Comments <span class="text-danger">*</span></label>
+                                        <textarea name="comments" id="comments" rows="4" class="form-control"
+                                            placeholder="Message :"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-grid">
+                                        <a href="mailto:example@hotmail.com" id="submit" name="send"
+                                            class="btn btn-primary">Send
+                                            Message</a>
+                                    </div>
+                                </div><!--end col-->
+                            </div><!--end row-->
+                        </form>
+                    </div><!--end custom-form-->
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
+    </section><!--end section-->
+    <!-- End -->
+
+
+
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-py-60">
+                        <div class="row">
+                            <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                                <a href="#" class="logo-footer">
+                                    <img src="../images/public/Logo.png" height="100" alt="">
+                                </a>
+                                <p class="mt-4">Welcome to our online magazine—a dynamic space where curiosity meets
+                                    creativity. Discover a world of insightful articles, trending topics, and
+                                    captivating stories designed to inform, inspire, and entertain. Whether you're
+                                    seeking knowledge, lifestyle tips, or the latest updates, we've got something for
+                                    everyone!</p>
+                                <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
+                                    <li class="list-inline-item">
+                                        <a href="#" class="rounded">
+                                            <i class="mdi mdi-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="rounded">
+                                            <i class="mdi mdi-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="rounded">
+                                            <i class="mdi mdi-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="rounded">
+                                            <i class="mdi mdi-github"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="rounded">
+                                            <i class="mdi mdi-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="rounded">
+                                            <i class="mdi mdi-whatsapp"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!--end icon-->
+                            </div>
+
+
+                            <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                <h5 class="footer-head">Usefull Links</h5>
+                                <ul class="list-unstyled footer-list mt-4">
+                                    <li>
+                                        <a href="../index.html" class="text-foot">
+                                            <i class="ti ti-chevron-right me-1"></i> Home </a>
+                                    </li>
+                                    <li>
+                                        <a href="about-us.html" class="text-foot">
+                                            <i class="ti ti-chevron-right me-1"></i> About us </a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html" class="text-foot">
+                                            <i class="ti ti-chevron-right me-1"></i> Contact us </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                <h5 class="footer-head">Question?</h5>
+                                <ul class="list-unstyled footer-list mt-4">
+                                    <li class="d-flex">
+                                        <span class="ti ti-mail fs-5"></span>
+                                        <div class="flex-1 ms-2">
+                                            <span class="d-block text-light">Drop us a line at:</span>
+                                            <a href="mailto:contact@example.com"
+                                                class="text-foot d-block mt-2">contact@example.com</a>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <span class="ti ti-phone fs-5"></span>
+                                        <div class="flex-1 ms-2">
+                                            <span class="d-block text-light">Call now:</span>
+                                            <a href="tel:+152534-468-854" class="text-foot d-block mt-2">+963 123 456
+                                                789</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-py-30 footer-border">
+                        <div class="row align-items-center">
+                            <div class="col-sm-6">
+                                <div class="text-sm-start">
+                                    <p class="mb-0">©
+                                        <script>
+                                            document.write(new Date().getFullYear())
+                                        </script> Design with <i class="mdi mdi-heart text-danger"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                <ul class="list-unstyled footer-list terms-service text-sm-end mb-0">
+                                    <li class="list-inline-item mb-0">
+                                        <a href="javascript:void(0)" class="text-foot me-2">Privacy</a>
+                                    </li>
+                                    <li class="list-inline-item mb-0">
+                                        <a href="javascript:void(0)" class="text-foot me-2">Terms</a>
+                                    </li>
+                                    <li class="list-inline-item mb-0">
+                                        <a href="javascript:void(0)" class="text-foot me-2">FAQs</a>
+                                    </li>
+                                    <li class="list-inline-item mb-0">
+                                        <a href="contact.html" class="text-foot">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--end footer-->
+    <!-- Footer End -->
+
+    <!-- Back to top -->
+    <a href="javascript:void(0)" onclick="topFunction()" id="back-to-top" class="back-to-top rounded-pill"><i
+            class="mdi mdi-arrow-up"></i></a>
+    <!-- Back to top -->
+
+    <!-- javascript -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/tiny-slider.js"></script>
+    <script src="../js/plugins.init.js"></script>
+    <!--Note: All init js like tiny slider, counter, lightbox, gallery etc.-->
+    <script src="../js/app.js"></script>
+    <!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script>
+        function validateForm() {
+            // Get form inputs
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var subject = document.getElementById('subject').value;
+            var comments = document.getElementById('comments').value;
+            var errorMsg = document.getElementById('error-msg');
+
+            // Email validation regex
+            var emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+            // Clear previous error message
+            errorMsg.innerHTML = "";
+
+            // Validation checks
+            if (name === "") {
+                errorMsg.innerHTML = "<span class='text-danger'>Please enter your name.</span>";
+                return false;
+            }
+            if (email === "" || !email.match(emailPattern)) {
+                errorMsg.innerHTML = "<span class='text-danger'>Please enter a valid email address.</span>";
+                return false;
+            }
+            if (comments === "") {
+                errorMsg.innerHTML = "<span class='text-danger'>Please enter your message.</span>";
+                return false;
+            }
+
+            // If all validations pass, show success message
+            document.getElementById('simple-msg').innerHTML = "<span class='text-success'>Your message has been sent successfully!</span>";
+
+            // Prevent actual form submission for demo purposes
+            return false;
+        }
+    </script>
+    <script>
+        // Sample data for search
+        const items = [
+            { title: "Discover Insights: The Future of Online Magazines", url: "/pages/News-blog/blog-news 4.html" },
+            { title: "Breakthroughs in Health Technology 2024", url: "/pages/Health%20blog/blog-health%201.html" },
+            { title: "Simple Habits for a Healthier Lifestyle", url: "/pages/Health%20blog/blog-health%202.html" },
+            { title: "Top Exercises to Stay Fit at Home", url: "/pages/Health%20blog/blog-health%203.html" },
+            { title: "Latest Updates on Global Health Trends", url: "/pages/Health%20blog/blog-health%204.html" },
+            { title: "The Future of AI: Trends and Innovations", url: "/pages/Tech%20blog/blog-tech%201.html" },
+            { title: "Top Cybersecurity Practices for Modern Businesses", url: "/pages/Tech%20blog/blog-tech%202.html" },
+            { title: "How 5G Networks are Changing Connectivity", url: "/pages/Tech%20blog/blog-tech%203.html" },
+            { title: "Global Economic Trends in 2024", url: "/pages/News%20blog/blog-news%201.html" },
+            { title: "Political Shifts Across Continents", url: "/pages/News%20blog/blog-news%202.html" },
+            { title: "Breaking News: Advances in Renewable Energy", url: "/pages/News%20blog/blog-news%203.html" }
+        ];
+
+        const searchInput = document.getElementById('searchInput');
+        const results = document.getElementById('results');
+
+        function filterResults(query) {
+            results.innerHTML = '';
+            if (query) {
+                const filteredItems = items.filter(item =>
+                    item.title.toLowerCase().includes(query.toLowerCase())
+                );
+
+                filteredItems.forEach(item => {
+                    const li = document.createElement('li');
+                    const a = document.createElement('a');
+                    a.textContent = item.title;
+                    a.href = item.url;
+                    a.classList.add('search-result-item');
+                    li.appendChild(a);
+                    results.appendChild(li);
+                });
+            }
+        }
+
+        searchInput.addEventListener('input', () => filterResults(searchInput.value));
+
+        document.addEventListener('click', (e) => {
+            if (!searchInput.contains(e.target) && !results.contains(e.target)) {
+                results.innerHTML = '';
+            }
+        });
+    </script>
+</body>
+
+
+</html>
